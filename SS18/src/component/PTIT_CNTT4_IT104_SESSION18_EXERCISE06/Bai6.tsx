@@ -8,7 +8,7 @@ function genderReducer(state: string, action: Action): string{
             return state
     }
 };
-export default function Bai6() {
+export default function GenderCheckbox() {
     const [gender, dispatch] = useReducer(genderReducer, "Nam");
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) =>{
         dispatch({type: "CHANGE", payload: e.target.value});

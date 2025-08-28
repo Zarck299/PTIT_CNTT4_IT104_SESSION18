@@ -4,7 +4,7 @@ type User = {
     name: string,
     age: number
 }
-export default function Bai2() {
+export default function UserAbove18() {
     const users: User[] = [
         { id: 1, name: "An", age: 17 },
         { id: 2, name: "Bình", age: 20 },

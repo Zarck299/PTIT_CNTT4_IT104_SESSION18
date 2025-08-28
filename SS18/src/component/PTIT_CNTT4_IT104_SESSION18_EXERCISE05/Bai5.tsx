@@ -8,7 +8,7 @@ function inputReducer(state: string, action: Action): string{
             return state;
     };
     }
-export default function Increase() {
+export default function InputChange() {
     const [text, dispatch] = useReducer(inputReducer, "");
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) =>{
         dispatch({type: "CHANGE", payload: e.target.value})
